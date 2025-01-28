@@ -1,0 +1,733 @@
+/* font google */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo&family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+header {
+  background-image: url(../image/hero.jpg);
+  background-size: cover;
+  background-position: 0 -50px;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  background: #1b1a55;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: flex;
+}
+
+.brand {
+  font-family: "Exo", sans-serif;
+  color: #faf8ed;
+}
+
+nav ul {
+  width: 42%;
+  list-style: none;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: #faf8ed;
+  font-family: "Exo", sans-serif;
+  font-size: 0.9em;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul li a.nActive {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* jumbotron */
+.jumbotron {
+  padding-top: 100px;
+  background-color: rgba(7, 15, 43, 0.5);
+  width: 100%;
+  min-height: 100vh;
+  color: #faf8ed;
+  justify-content: center;
+}
+
+.jumbotron .logo img {
+  margin: 100px auto;
+  width: 500px;
+}
+
+.jumbotron .deskripsi {
+  padding: 150px 50px;
+}
+
+.jumbotron .deskripsi h1 {
+  font-family: "Exo", sans-serif;
+  letter-spacing: 1px;
+}
+
+.jumbotron .deskripsi p {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.jumbotron .deskripsi a {
+  padding: 15px 20px;
+  color: #faf8ed;
+  background-color: #1b1a55;
+  font-family: "Exo", sans-serif;
+  text-decoration: none;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.jumbotron .deskripsi a:hover {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #070f2b;
+}
+
+/* about */
+#about {
+  background-color: #070f2b;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+#about .iklan {
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+#about .iklan img {
+  display: block;
+  width: 57%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.about {
+  width: 57%;
+  background-color: #535c91;
+  margin: 15px auto;
+  border-radius: 10px;
+  padding: 15px;
+  color: #faf8ed;
+}
+
+.about h2 {
+  font-family: "Exo", sans-serif;
+}
+
+.about p {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  text-align: justify;
+}
+
+/* topup */
+#topUp {
+  background-color: #070f2b;
+  padding: 80px 50px 10px;
+  display: flex;
+}
+
+.tGame {
+  width: 35%;
+  padding: 20px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.tGame img {
+  width: 100px;
+  border-radius: 20px;
+}
+
+.tGame h3 {
+  padding-top: 10px;
+  margin-left: 15px;
+  font-size: 190%;
+  font-family: "Exo", sans-serif;
+  color: #faf8ed;
+}
+
+.tGame .judul {
+  width: 80%;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.tGame p {
+  margin-top: 10px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  font-family: "Roboto", sans-serif;
+}
+
+.tGame p:nth-child(4) {
+  margin-bottom: 30px;
+}
+
+.tGame .download {
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1b1a55;
+  border-radius: 7px;
+  transition: 1s;
+  font-family: "Exo", sans-serif;
+}
+
+.tGame .download:hover {
+  background-color: #faf8ed;
+  color: #000000;
+}
+
+.pembelian {
+  width: 65%;
+  padding: 10px;
+}
+
+.card {
+  border: 1px solid #faf8ed;
+  padding: 15px;
+  background-color: #535c91;
+  border-radius: 10px;
+  box-shadow: 0px 4px 40px 0px rgba(27, 26, 85, 0.2);
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+.pembelian .user,
+.pembelian .zone {
+  padding: 15px;
+  margin: 10px 20px 10px 0;
+  border-radius: 5px;
+  resize: vertical;
+  border: 1px solid #faf8ed;
+  background-color: #535c91;
+  color: #fff;
+  width: 35%;
+}
+
+.pembelian .email {
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  resize: vertical;
+  border: 2px solid #faf8ed;
+  background-color: #535c91;
+  color: #fff;
+  width: 100%;
+}
+
+.pembelian input::-webkit-input-placeholder {
+  color: #faf8ed;
+}
+
+.pembelian input:-moz-input-placeholder {
+  color: #faf8ed;
+}
+
+.pembelian input:-ms-input-placeholder {
+  color: #faf8ed;
+}
+
+.pembelian p {
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.number {
+  display: flex;
+  font-family: "Exo", sans-serif;
+  color: #faf8ed;
+  margin-bottom: 10px;
+}
+
+.number span {
+  width: 33px;
+  height: 33px;
+  background-color: #1b1a55;
+  text-align: center;
+  font-size: 26px;
+  margin-right: 10px;
+  border-radius: 7px;
+}
+
+.pembelian .Topup ul,
+.pembelian .bayar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pembelian .Topup ul {
+  margin-top: 20px;
+}
+.pembelian .Topup ul.kategoriTp li {
+  width: 30%;
+  text-align: center;
+}
+
+.pembelian .Topup li {
+  border: 2px solid #faf8ed;
+  background-color: #9290c3;
+  color: #faf8ed;
+  padding: 10px;
+  flex-direction: 1;
+  width: 150px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.Topup li:hover {
+  border: 2px solid #faf8ed;
+  color: #faf8ed;
+  background-color: #1b1a55;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pembelian .bayar li {
+  border: 2px solid #faf8ed;
+  background-color: #9290c3;
+  color: #faf8ed;
+  padding: 20px;
+  flex-direction: 1;
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.bayar li:hover {
+  color: #faf8ed;
+  border: 2px solid #faf8ed;
+  background-color: #1b1a55;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pembelian ul li.active {
+  font-weight: 600;
+  border: 2px solid #faf8ed;
+  background-color: #1b1a55;
+}
+
+.detail .hasil {
+  border: 2px solid #faf8ed;
+  padding: 15px;
+  background-color: #535c91;
+  border-radius: 0 0 13px 13px;
+  box-shadow: 0px 4px 40px 0px rgba(250, 248, 237, 0.2);
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  color: #faf8ed;
+}
+
+.detail .hasil h3 {
+  margin-bottom: 10px;
+}
+
+.detail .hasil button {
+  width: 98%;
+  display: block;
+  margin: 13px auto 0;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 0 0 10px 10px;
+  border: 2px solid #faf8ed;
+  font-family: "Exo", sans-serif;
+  color: #faf8ed;
+  background-color: #9290c3;
+}
+
+.detail .hasil button:hover {
+  border: 2px solid #faf8ed;
+  background-color: #1b1a55;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* fitur */
+#fitur {
+  background-color: #070f2b;
+  padding: 80px 25px 40px;
+}
+
+#fitur h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Exo", sans-serif;
+  color: #faf8ed;
+}
+
+.daftar_fitur {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+.daftar_fitur article i {
+  font-size: 50px;
+  border: 2px solid;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  background-color: #1b1a55;
+  border-radius: 100%;
+}
+
+#fitur .daftar_fitur article h2 {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.daftar_fitur article {
+  border: 2px solid #faf8ed;
+  padding: 15px;
+  background-color: #535c91;
+  border-radius: 10px;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 40px;
+  width: 350px;
+  color: #faf8ed;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.daftar_fitur article:hover {
+  border: 2px solid #535c91;
+  background-color: #faf8ed;
+  color: #070f2b;
+}
+
+.daftar_fitur article:hover i {
+  background-color: #535c91;
+  border: 2px solid #faf8ed;
+}
+
+/* contact */
+#contact {
+  padding: 80px 25px 50px;
+  background-color: #070f2b;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Exo", sans-serif;
+  color: #faf8ed;
+  margin-bottom: 25px;
+}
+
+#contact .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#contact .formContact {
+  width: 55%;
+}
+
+#contact .formContact form,
+#contact .profile {
+  margin: 20px;
+  display: block;
+  border: 2px solid #faf8ed;
+  padding: 15px;
+  background-color: #9290c3;
+  border-radius: 10px;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+#contact .formContact form h3 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Exo", sans-serif;
+  color: #070f2b;
+  margin-bottom: 20px;
+}
+
+.formContact input[type="text"],
+.formContact input[type="email"],
+.formContact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #9c9c9c;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.formContact input[type="submit"] {
+  width: 100%;
+  border: 2px solid #1b1a55;
+  background-color: #535c91;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.formContact input[type="submit"]:hover {
+  background-color: #1b1a55;
+  color: #faf8ed;
+  transition: 0.3s;
+}
+
+#contact aside {
+  width: 45%;
+}
+
+.profile img {
+  width: 150px;
+  border: 2px solid #535c91;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  display: block;
+}
+
+#contact aside .profile h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Exo", sans-serif;
+  color: #faf8ed;
+  margin-bottom: 20px;
+}
+
+#contact .profile ul li {
+  font-family: "Roboto", sans-serif;
+  color: #faf8ed;
+  padding: 5px 10px;
+  text-align: left;
+  list-style: none;
+}
+
+footer {
+  width: 100%;
+  padding: 25px;
+  background-color: #000000;
+  color: #f9b572;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #faf8ed;
+}
+
+footer a:hover {
+  text-decoration: line;
+  color: #f9b572;
+  transition: 0.2s;
+}
+
+/* Responsive */
+/* ukuran Tablet */
+@media screen and (max-width: 1432px) {
+  .tGame h3 {
+    font-size: 160%;
+  }
+
+  .tGame .judul {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  .tGame h3 {
+    font-size: 120%;
+  }
+
+  .tGame img {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .tGame {
+    width: 50%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  header {
+    background-position: 0 0;
+  }
+
+  #about img {
+    width: 85%;
+  }
+
+  .about {
+    width: 85%;
+  }
+
+  #about .iklan img {
+    width: 85%;
+  }
+
+  #topUp {
+    display: block;
+  }
+
+  .tGame,
+  .pembelian {
+    width: 100%;
+  }
+
+  .tGame p {
+    text-align: justify;
+  }
+
+  .pembelian .Topup ul {
+    justify-content: space-between;
+  }
+
+  .pembelian .Topup li {
+    width: 30%;
+  }
+
+  .pembelian .bayar li {
+    width: 300px;
+  }
+
+  .pembelian .bayar li:nth-child(11) {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 796px) {
+  #contact .container {
+    display: block;
+  }
+
+  #contact .formContact,
+  #contact aside {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .pembelian .bayar li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 751px) {
+  .pembelian .Topup li {
+    width: 46%;
+  }
+
+  .pembelian .Topup ul.kategoriTp li {
+    width: 46%;
+  }
+
+  .daftar_fitur article {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 651px) {
+  .pembelian .Topup li {
+    width: 44%;
+  }
+
+  header {
+    background-position: -130px 0;
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  nav ul {
+    margin: 10px auto 5px;
+    width: 80%;
+  }
+
+  #topUp {
+    padding: 80px 20px 10px;
+  }
+
+  .pembelian .user,
+  .pembelian .zone {
+    width: 44%;
+  }
+
+  .pembelian .Topup ul.kategoriTp li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .pembelian .Topup li {
+    width: 43%;
+  }
+
+  .jumbotron .deskripsi {
+    padding: 80px 50px;
+  }
+
+  .pembelian .user,
+  .pembelian .zone {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 446px) {
+  .pembelian .Topup li {
+    width: 100%;
+  }
+
+  #contact {
+    padding: 80px 15px 10px;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .jumbotron .deskripsi h1 {
+    font-size: 23px;
+  }
+}
